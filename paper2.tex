@@ -140,7 +140,7 @@ where $\hdel$ and $\tilde{R}$ denote the Levi-Civita connection and Riemann curv
 
 Since the flow is a parabolic system, one usually expects that the flow will improve the regularity of initial data. In view of this, there has been a wide variety of literature extending the existence theory of Ricci Flow and Ricci-DeTurck $h$-flow to settings with less regularity. The foundational result in this area is by Shi in \cite{shi_deforming_1989} who showed the short-time existence of a solution to the Ricci-DeTurck flow from a metric that is complete with bounded curvature. A metric $g$ is called $L^\infty$ or bi-Lipschitz if $\Lambda^{-1}h \leq g \leq \Lambda h$ almost everywhere on $M$ with $\Lambda >1$ and $h$ is some fixed smooth background metric. Building on the result of Shi, Simon in \cite{simon_deformation_2002} established the following regularization result: if $(1+\delta)^{-1}h \leq g_0 \leq (1+\delta)h$ for some sufficiently small dimensional constant $\delta$, then there exists a short-time solution to the Ricci-DeTurck $h$-flow on $M \times (0,T]$ which is smooth for $t > 0$ with convergence back to $g_0$ in $C^0_\text{loc}$ if $g_0$ was additionally in $C^0_\text{loc}$. In Euclidean space, Koch and Lamm in \cite{koch_geometric_2012} used heat kernel estimates to show the existence and uniqueness of a global and analytic solution to the Ricci-DeTurck $h$-flow on $\mathbb{R}^n$ from $L^\infty$ initial metrics that are close in $L^\infty$ to the Euclidean metric. Building on these results, Burkhardt-Guim in \cite{burkhardt-guim_pointwise_2019} further studied Ricci flow from $C^0$ initial metrics on closed manifolds, in particular relying on heat kernel estimates to establish an iteration scheme to construct a short-time solution and applied this Ricci flow existence theory to study scalar curvature lower bounds and a question of Gromov. In the direction of more general $L^\infty$ initial data, Lamm and Simon in \cite{lamm_ricci_2021} showed the short-time existence for the Ricci-DeTurck $h$-flow on complete four-manifolds for rough initial metrics that are in $L^\infty \cap W^{2,2}$. They showed that solutions are uniformly smooth for positive time and converge back to the initial data in $W^{2,2}_\text{loc}$ sense as $t\to0$. In \cite{chu_ricci-deturck_2022}, Chu and the first named author developed this further and considered the case where $g_0 \in L^\infty \cap W^{1,n}$, showing the existence of the flow starting from metrics which are $L^\infty$ and satisfy a small local gradient concentration in a $W^{1,n}$ sense, and study a number of applications.
 
-Motivated by the work \cite{chu_ricci-deturck_2022}, and the heat kernel based approach of Burkhardt-Guim, in this work we consider the existence theory for metrics that are in $L^\infty$ and satisfy a $L^1$ Morrey-type integrability condition (condition (ii) of Theorem \ref{thm:intro-application-1-statement} below) and study removable singularity theorem related to scalar curvature. We will see that the Morrey-type condition allows for the use of heat kernel estimates to establish a priori estimates that are important for the existence theory. Our main theorem is the following existence theorem for the smooth $h$-flow with quantitative estimates.
+Motivated by the work \cite{chu_ricci-deturck_2022}, and the heat kernel based approach of Burkhardt-Guim, in this work we consider the existence theory for metrics that are in $L^\infty$ and satisfy a $L^1$ Morrey-type integrability condition (condition (ii) of Theorem \ref{thm:intro-application-1-statement} below) and study a removable singularity theorem related to scalar curvature. We will see that the Morrey-type condition allows for the use of heat kernel estimates to establish a priori estimates that are important for the existence theory. Our main theorem is the following existence theorem for the smooth $h$-flow with quantitative estimates.
 
 \begin{theorem}\label{thm:intro-application-1-statement}
     Suppose $(M^n, h)$ is a complete Riemannian manifold satisfying \eqref{eqn:h-remark-curvature-estimates}. Suppose $g_0$ is a $C^0_{loc}\cap W^{1,2}_{loc}$ Riemannian metric on $M$ and $\Sigma \subseteq M$ is a compact set so that the following holds:
@@ -168,10 +168,10 @@ Motivated by the work \cite{chu_ricci-deturck_2022}, and the heat kernel based a
             \item $g(t) \to g_0$ in $C_\text{loc}^\infty(M\setminus\Sigma)$ as $t \to 0$;
           %  \item $g(t)\to g_0$ in $W^{1,p}_{loc}$ as $t\to 0$.
         \end{enumerate}
-        Moreover, the solution is unique within the class of solution satisfying (a).
+        Moreover, the solution is unique within the class of solutions satisfying (a).
 \end{theorem}
 
-By H\"older inequality, we see that  a Morrey-type condition is weaker than $W^{1,p}$. Thus, the result is new even if $\Sigma=\emptyset$.
+By H\"older inequality, we see that the Morrey-type condition is weaker than being in $W^{1,p}$. Thus, the result is new even if $\Sigma=\emptyset$.
 
 
 
@@ -181,9 +181,9 @@ By H\"older inequality, we see that  a Morrey-type condition is weaker than $W^{
 
 %We will see in Lemma \ref{lem:estimates-h-star} that we can produce a metric $\tilde{h}$ with uniformly bounded curvature of all orders as assumed in Theorems \ref{thm:intro-main-theorem} and \ref{thm:intro-application-1-statement} by a small perturbation of a metric $h$ only satisfying $|\text{Rm}(h)|\leq 1$. So, as we will note in  Remark \ref{rmk:estimates-h-remark}, it will be enough to assume that $|\text{Rm}(h)|\leq 1$ and then work with the metric $\tilde{h}$.
 
-Our work is motivated by the removable singularity in view of scalar curvature. In \cite{lee_positive_2015}, Lee--Lefloch introduced a notion of distributional scalar curvature for metrics with lower regularity. In \cite{jiang_removable_2022}, the authors showed that for metrics $g \in C^0 \cap W^{1,p}_{\text{loc}}(M)$ where $M$ is complete asymptotically flat with $n \leq p \leq \infty$ satisfying $R_g \geq 0$ outside some compact singular set $\Sigma$ also has non-negative ADM mass (with rigidity) provided the singular set is not too large in terms of Hausdorff measure. In the compact case,  the authors in \cite{jiang_weak_2021} also show that distributional scalar curvature lower bounds can be preserved and improved to classical scalar curvature lower bounds along Ricci flow for metrics in $W^{1,p}(M)$ for $n < p \leq \infty$. These results are related to positive mass theorems for lower regularity metrics and a conjecture of Schoen regarding the removable singularity of $L^\infty$ metrics on $\mathbb{T}^n$ with co-dimension three singularity and $R_g \geq 0$ on the regular part. In this work, we are primarily interested to know if we strength the regularity from $C^0$ slightly to Morrey-type on gradient, then under what conditions on the singular set we might expect the rigidity in scalar curvature.  In Theorem \ref{thm:preservation-distributional-scalar-curvature-lower-bound} and Corollary \ref{thm:non-cpt-dist-scalar-curvature-lower-bdd}, we use the rough existence theory established in Theorem \ref{thm:intro-application-1-statement} to obtain similar results for metrics which satisfy the Morrey-type condition, as long as the singular set is small in terms of a notion of co-dimension considered in \cite{lee_continuous_2021}.
+Our work is motivated by the removable singularity in view of scalar curvature. In \cite{lee_positive_2015}, Lee--Lefloch introduced a notion of distributional scalar curvature for metrics with lower regularity. In \cite{jiang_removable_2022}, the authors showed that for metrics $g \in C^0 \cap W^{1,p}_{\text{loc}}(M)$ where $M$ is complete asymptotically flat with $n \leq p \leq \infty$ satisfying $R_g \geq 0$ outside some compact singular set $\Sigma$ also has non-negative ADM mass (with rigidity) provided the singular set is not too large in terms of Hausdorff measure. In the compact case,  the authors in \cite{jiang_weak_2021} also show that distributional scalar curvature lower bounds can be preserved and improved to classical scalar curvature lower bounds along Ricci flow for metrics in $W^{1,p}(M)$ for $n < p \leq \infty$. These results are related to positive mass theorems for lower regularity metrics and a conjecture of Schoen regarding the removable singularity of $L^\infty$ metrics on $\mathbb{T}^n$ with co-dimension three singularity and $R_g \geq 0$ on the regular part. In this work, we are primarily interested in the following question: if we strengthen the regularity from $C^0$ slightly to the Morrey-type condition on the gradient, then under what conditions on the singular set could we expect to have scalar curvature rigidity. In Theorem \ref{thm:preservation-distributional-scalar-curvature-lower-bound} and Corollary \ref{thm:non-cpt-dist-scalar-curvature-lower-bdd}, we use the rough existence theory established in Theorem \ref{thm:intro-application-1-statement} to obtain similar results for metrics which satisfy the Morrey-type condition, as long as the singular set is small in terms of a notion of co-dimension considered in \cite{lee_continuous_2021}.
 
-We now outline the rest of this work. In Section \ref{sec:a-priori-estimates}, we establish the priori estimates that will be used later. In Section \ref{sec:proof-of-main-theorem}, we prove Theorem \ref{thm:intro-application-1-statement}. Finally, in Section \ref{sec:applications}, we study the applications outlined above.
+We now outline the rest of this work. In Section \ref{sec:a-priori-estimates}, we establish the a priori estimates that will be used later. In Section \ref{sec:proof-of-main-theorem}, we prove Theorem \ref{thm:intro-application-1-statement}. Finally, in Section \ref{sec:applications}, we study the application outlined above.
 
 
 
@@ -191,16 +191,15 @@ We now outline the rest of this work. In Section \ref{sec:a-priori-estimates}, w
 \section{a-priori estimates}\label{sec:a-priori-estimates}
 
 
-In this section, we establish quantitative estimates that will be important in the proof of the main theorem. In general, we consider rough metric $g_0$ inside a smooth background manifold $(M,h)$ with $\sup_M|\mathrm{Rm}(h)|<+\infty$. Thanks to Shi's smoothing result \cite{shi_deforming_1989}, in our content we will as well assume  
+In this section, we establish quantitative estimates that will be important in the proof of the main theorem. In general, we consider rough metrics $g_0$ inside a smooth background manifold $(M,h)$ with $\sup_M|\mathrm{Rm}(h)|<+\infty$. Thanks to Shi's smoothing result \cite{shi_deforming_1989}, in our content we will as well assume  
 \begin{equation}\label{eqn:h-remark-curvature-estimates}
   \sup\limits_{M}|\hdel^i\text{Rm}(h)|:=k_i<+\infty,\;\; \forall i\in \mathbb{N}
 \end{equation}
-where $\hdel$ denotes the connection of $h$. In the following and the rest of this work, we denote by $k_i := \sup\limits_M|\hdel^i\text{Rm}(h)|$ and, as mentioned above, we will specify using parentheses the quantities that certain numbered constants depend upon, e.g. $C_j = C_j(n,k_1,\dots,k_i) > 0$ denotes a positive constant $C_j$ that depends on the dimension and quantities $k_1$, up to $k_i$. These constants may be changing line by line throughout and we will only re-introduce the parentheses when the dependency changes.
-All distance, norm and connection are measured with respect to the metric $h$, unless noted otherwise. We also use $a\wedge b$ to denote $\min\{a,b\}$.
+where $\hdel$ denotes the connection of $h$. In the following and the rest of this work, we denote by $k_i := \sup\limits_M|\hdel^i\text{Rm}(h)|$ and we will specify using parentheses the quantities that certain numbered constants depend upon, e.g. $C_j = C_j(n,k_1,\dots,k_i) > 0$ denotes a positive constant $C_j$ that depends on the dimension and quantities $k_1$, up to $k_i$. These constants may be changing line by line throughout and we will only re-introduce the parentheses when the dependency changes. All distances, norms and connection are measured with respect to the metric $h$, unless noted otherwise. We also use $a\wedge b$ to denote $\min\{a,b\}$.
 
 \subsection{Parabolic boot-strapping}
 
-Following \cite{shi_deforming_1989} and \cite{simon_deformation_2002}, the next lemma says that given a first order interior estimate, we may parabolically bootstrap to obtain higher order interior estimates.
+Following \cite{shi_deforming_1989} and \cite{simon_deformation_2002}, the following lemma says that given a first order interior estimate, we may parabolically bootstrap to obtain higher order interior estimates.
 
 \begin{lemma}\label{lem:estimates-bootstrap}
     Suppose $g(t)$ is a smooth solution to the Ricci-DeTurck $h$-flow on $M \times [0,T]$ for some smooth background metric $h$ satisfying (\ref{eqn:h-remark-curvature-estimates}) % as in Remark \ref{rmk:estimates-h-remark} 
@@ -223,7 +222,7 @@ Following \cite{shi_deforming_1989} and \cite{simon_deformation_2002}, the next 
 \end{lemma}
 
 \begin{proof}[Sketch of Proof]
-    The proof of the above lemma is a standard induction argument, using Bernstein-Shi trick and the non-scaling invariant order on $t$ given in assumption (ii) above instead of the $t^{-\frac{1}{2}}$ found in Lemma 4.1-4.2 of \cite{simon_deformation_2002}. For $m \in \mathbb{N}$, we obtain (\ref{eqn:bootstrap-higher-order-interior-estimate}) by considering the evolution equation under the operator $\partial_t - g^{ij}\hdel_i\hdel_j$ of 
+    The proof of the above lemma is a standard induction argument, using Bernstein-Shi's trick and the non-scaling invariant order on $t$ given in assumption (ii) above instead of the $t^{-\frac{1}{2}}$ found in Lemma 4.1-4.2 of \cite{simon_deformation_2002}. For $m \in \mathbb{N}$, we obtain (\ref{eqn:bootstrap-higher-order-interior-estimate}) by considering the evolution equation under the operator $\partial_t - g^{ij}\hdel_i\hdel_j$ of 
     \begin{equation*}
         t^{2m-1-\frac{2\delta}{p}}|\hdel^m g|^2\left(|\hdel^{m-1}g|^2 + Lt^{-m+1+\frac{\delta}{p}}\right),
     \end{equation*}
@@ -347,7 +346,7 @@ Since at time $t = s>0$, $G(x,t;y,s) = \widetilde{G}(x,t;y,s)=\delta_y(x)$, the 
     \end{equation}
     for any $t\in (0,  T]$.
     
-    By \eqref{eqn:gradient-estimate-K-heat-kernel-estimate}, the co-area formula and Stoke Theorem, we have on the right hand side of (\ref{eqn:gradient-estimate-invoke-heat-kernel})
+    By \eqref{eqn:gradient-estimate-K-heat-kernel-estimate}, the co-area formula and Stokes' Theorem, we have on the right hand side of (\ref{eqn:gradient-estimate-invoke-heat-kernel})
     \begin{align}\label{eqn:gradient-estimate-Q-heat-kernel-estimate2}
         &\int_{M} K(x_0, T_1; y, 0)f(0)Q(y,0)d\mu_h(y) \nonumber \\
         \quad& \leq \int_{M} \frac{C_0}{T_1^{\frac{n}{2}}}\exp\left(-\frac{d^2_{h_0}(x_0, y)}{C_0 T_1}\right)\left(|\hdel g_0|^2 +1\right)^{\frac{1}{2}}d\mu_h(y) \nonumber \\
@@ -394,22 +393,22 @@ Since at time $t = s>0$, $G(x,t;y,s) = \widetilde{G}(x,t;y,s)=\delta_y(x)$, the 
 
 
 \section{Short-time existence}\label{sec:proof-of-main-theorem}
-In this section, we will prove the short-time existence on metrics which is possibly singular and satisfies a Morrey-type integrability condition. We first consider the case when $\Sigma=\emptyset$. That said the initial data is smooth and satisfies a uniform Morrey-type integrability condition. We note that since $M$ is possibly non-compact, the uniform short-time existence is not covered by the work of Simon \cite{simon_deformation_2002}.
-\begin{proof}[Proof of Existence in  Theorem~\ref{thm:intro-application-1-statement} when $\Sigma=\emptyset$]
+In this section, we will prove short-time existence on metrics which are possibly singular and satisfy the Morrey-type integrability condition. We first consider the case when $\Sigma=\emptyset$, that is, when the initial data is smooth and satisfies the uniform Morrey-type integrability condition. We note that since $M$ is possibly non-compact, the uniform short-time existence is not covered by the work of Simon \cite{simon_deformation_2002}.
+\begin{proof}[Proof of Existence in Theorem~\ref{thm:intro-application-1-statement} when $\Sigma=\emptyset$]
 
 Without loss of generality, we assume $M$ to be non-compact. By \cite{tam_exhaustion_2010} and $|\text{Rm}(h)|\leq k_0$, there is $\rho \in C^\infty_\text{loc}(M)$ such that $|\hdel \rho|^2 + |\hdel^2 \rho| \leq 1$ and
     \begin{equation*}
         C(n,k_0)^{-1}(d_h(\cdot, p)+1)\leq \rho(\cdot) \leq  C(n,k_0)(d_h(\cdot,p) + 1)
     \end{equation*}
     for some $ C(n,k_0)>0$. Let $\phi$ be a smooth function on $[0,+\infty)$ such that $\phi \equiv 1$ on $[0,1]$, $\phi \equiv 0$ on $[2,+\infty)$ and $0\leq-\phi'\leq 10$. Fix $R_i\to+\infty$ and define a smooth metric 
-    $$g_{i,0}=\phi(\rho/R)g_0+(1-\phi(\rho/R)) h$$
+    $$g_{i,0}=\phi(\rho/R_i)g_0+(1-\phi(\rho/R_i)) h$$
 on $M$ which coincide with $h$ at spatial infinity of $M$ and coincide with $g_0$ on compact subset of $M$ as $i\to+\infty$. Then we might apply Theorem A.1 of \cite{lamm_ricci_2021} (which is a modification of Shi's classical existence theory in \cite{shi_deforming_1989}), to find  short-time solution to the Ricci-DeTurck $h$-flow $g_i(t)$ on $M \times [0,S_i]$ for some maximal existence time $S_i > 0$ such that $g_i(0) = g_{i,0}$ and $\sup\limits_M |\hdel^m g_i(\cdot, t)|<+\infty$ for all $t \in [0, S_i]$ and all $m\in \mathbb{N}$. %Note that since $|\text{Rm}(h)|\leq 1$, we can take $h$ to satisfy (\ref{eqn:h-remark-curvature-estimates}) as in Remark \ref{rmk:estimates-h-remark}.
 
 Since 
 \begin{equation}
-|\hdel g_{i,0}|\leq \frac{C(n,k_0)}{R}|g_0-h|+\phi\cdot |\hdel g_0|,
+|\hdel g_{i,0}|\leq \frac{C(n,k_0)}{R_i}|g_0-h|+\phi\cdot |\hdel g_0|,
 \end{equation}
-the metric $g_{i,0}$ satisfies assumption of  Proposition \ref{prop:gradient-estimate} uniformly for all $i\to+\infty$. Hence, Proposition \ref{prop:gradient-estimate} and Lemmas \ref{lem:estimates-bootstrap} apply to see that there is a $T(n, \Lambda_0, L_0, p, \delta,h) > 0$ such that  $T \leq S_i$ such that the solution $g_i(t)$ obtained above satisfies also (a) for all $t \in (0, T]$ uniformly for all $i\to+\infty$. We therefore obtain a smooth Ricci-Deturck $h$-flow $g(t)$ on $M\times (0,T]$ by taking subsequence $i\to+\infty$ using  the Arzel\`a--Ascoli theorem. Since $|\hdel g_i|$ has a uniform integrable bound in $t$, we see that $g(t)$ exists as a $C^0_{loc}$ metric on $M\times [0,T]$. Indeed, by shrinking $T$ we have 
+the metric $g_{i,0}$ satisfies assumption of  Proposition \ref{prop:gradient-estimate} uniformly for all $i\to+\infty$. Hence, Proposition \ref{prop:gradient-estimate} and Lemmas \ref{lem:estimates-bootstrap} apply to see that there is a $T(n, \Lambda_0, L_0, p, \delta,h) > 0$ such that $T \leq S_i$ with the solution $g_i(t)$ obtained above also satisfying (a) for all $t \in (0, T]$ uniformly for all $i\to+\infty$. We therefore obtain a smooth Ricci-Deturck $h$-flow $g(t)$ on $M\times (0,T]$ by taking subsequence $i\to+\infty$ using  the Arzel\`a--Ascoli theorem. Since $|\hdel g_i|$ has a uniform integrable bound in $t$, we see that $g(t)$ exists as a $C^0_{loc}$ metric on $M\times [0,T]$. Indeed, by shrinking $T$ we have 
 \begin{equation}
 (2\Lambda)^{-1}h\leq g(t)\leq 2\Lambda h
 \end{equation}
@@ -417,18 +416,18 @@ on $M\times [0,T]$ by integrating $\partial_t g$ in time.
 \end{proof}
 
 
-For application, we want to consider the case when $\Sigma$ is a non-empty compact subset of $M$. To do it, we start with constructing a $C^\infty$ approximation of $g_0$, see also \cite{lee_positive_2013,shi_scalar_2016,
+We now want to consider the case when $\Sigma$ is a non-empty compact subset of $M$. We start with constructing a $C^\infty$ approximation of $g_0$, see also \cite{lee_positive_2013,shi_scalar_2016,
 lee_continuous_2021,grant_positive_2014} and references therein for the other similar approximation schemes.
 
 
 \begin{lemma}\label{lem:mollification-scheme}
-    Suppose $g_0$ s a $C^0_{loc}$ metric on $M$ and  is smooth away from a compact set $\Sigma$. Moreover, suppose $g_0$ satisfies:
+    Suppose $g_0$ is a $C^0_{loc}$ metric on $M$ and is smooth away from a compact set $\Sigma$. Moreover, suppose $g_0$ satisfies:
     \begin{enumerate}[(i)]
         \item there is a $\Lambda_0 > 1$ such that on $M$,
         \begin{equation*}
             \Lambda_0^{-1}h \leq g_0 \leq \Lambda_0 h;
         \end{equation*}
-        \item   there exist $L_0,\delta,r_0 > 0$ and $p\geq 1$ such that for every $x_0 \in M$, $0 < r < r_0$,
+        \item there exist $L_0,\delta,r_0 > 0$ and $p\geq 1$ such that for every $x_0 \in M$, $0 < r < r_0$,
         \begin{equation*}
             \fint_{B(x_0,r)} |\hdel g_0|^p d\mu_h \leq L_0 r^{-p+\delta}.
         \end{equation*}
@@ -441,7 +440,7 @@ lee_continuous_2021,grant_positive_2014} and references therein for the other si
         \end{equation*}
         \item  there exist $L_1,r_1 > 0$  such that for every $x_0 \in M$, $0 < r < r_1$,
         \begin{equation*}
-            \fint_{B(x_0,r)} |\hdel g_0|^p d\mu_h \leq L_1 r^{-p+\delta};
+            \fint_{B(x_0,r)} |\hdel g_{i,0}|^p d\mu_h \leq L_1 r^{-p+\delta};
         \end{equation*}
         \item $g_{i,0} \to g_0$ in $C^0_{loc}$ on $M$ as $i \to \infty$;
         \item $g_{i,0} \to g_0$ in $C^\infty_{loc}$ on $M\setminus\Sigma$ as $i \to \infty$;
@@ -465,7 +464,7 @@ We might assume each $U_k$ is diffeomorphic to unit ball $B_{\mathbb{R}^n}(1)$ i
     \begin{equation*}
         g_{i,0}^k(x) := \int_{U_k} g_0^k(x-i^{-1}y)\eta(y)dy.
     \end{equation*}
-    for $x\in U_k$. Since $\varphi_k$ is compactly supported in $U_k$ for $k\geq 1$, we see that $g^k_{i,0}(x)=0$ for $x\to \partial U_k$ and sufficiently large $i$. Hence, $g^k_{i,0}$ extends trivially on $M$. Thus we might define
+    for $x\in U_k$. Since $\varphi_k$ is compactly supported in $U_k$ for $k\geq 1$, we see that $g^k_{i,0}(x)=0$ for $x\to \partial U_k$ and sufficiently large $i$. Hence, $g^k_{i,0}$ extends trivially on $M$. Thus we define
 $
         g_{i,0}:= \sum\limits_{k=1}^N g_{i,0}^k + g_0^0$ to be a metric on $M$.
   Near the infinity of $M$, $g_{i,0}=g_0^0=g_0$, while on compact set, $g_{i,0}$ is a mollification of $g_0$. It suffices to check that the above properties are satisfied on compact sets. For (a) and (b) above, it suffices to show that they are satisfied on compact set. Clearly by the standard mollification, we have (e) and (d) since $g_0\in W^{1,p}_{loc}(M)\cap C^\infty_{loc}(M\setminus \Sigma)$ so that $g_{i,0}^k\to g_0^k$ as $i\to+\infty$ in  $W^{1,p}_{loc}(M)\cap C^\infty_{loc}(M\setminus \Sigma)$ for each $k$.
@@ -557,7 +556,7 @@ for every compactly supported smooth test function $u:M\to\mathbb{R}$ and where
 and $\frac{d\mu_g}{d\mu_h}\in L^\infty_{\text{loc}}\cap W^{1,2}_{\text{loc}}$ is the density of $d\mu_g$ with respect to $d\mu_h$. Let $a$ be a constant. We say $R_g \geq a$ in the distributional sense when $    \left\langle\langle R_g-a, u\right\rangle\rangle\geq 0$ for every non-negative smooth test function $u$. Clearly, when $g$ is $C^2$, the distributional scalar curvature $R_g$ coincides with the classical scalar curvature.
 
 
-Our main motivation is to study metrics on compact manifold which are smooth outside some singular sets. In other word, we want to consider the question of whether a scalar curvature lower bound can be extended to a distributional scalar curvature lower bound across a set where the metric is singular.  In \cite{jiang_removable_2022}, the authors consider this for when $g \in C^0 \cap W^{1,p}_{loc}(M)$ for $n \leq p \leq \infty$ and the singular set is small in the sense of Hausdorff dimension, see  \cite[Lemma 2.7]{jiang_removable_2022}. In this work, we use a notion of co-dimension for compact subsets $\Sigma \subset M$ based on the volume growth of tubular neighborhoods of $\Sigma$. %introduced by Lee--Tam in \cite{lee_continuous_2021}.
+Our main motivation is to study metrics on compact manifolds which are smooth outside some singular sets. In other words, we want to consider the question of whether a scalar curvature lower bound can be extended to a distributional scalar curvature lower bound across a set where the metric is singular.  In \cite{jiang_removable_2022}, the authors consider this for when $g \in C^0 \cap W^{1,p}_{loc}(M)$ for $n \leq p \leq \infty$ and the singular set is small in the sense of Hausdorff dimension, see  \cite[Lemma 2.7]{jiang_removable_2022}. In this work, we use a notion of co-dimension for compact subsets $\Sigma \subset M$ based on the volume growth of tubular neighborhoods of $\Sigma$. %introduced by Lee--Tam in \cite{lee_continuous_2021}.
 
 \begin{definition}
 \label{defn:codim}
@@ -679,7 +678,7 @@ so that $\text{II}\to0$ as $\e\to 0$ since $d\geq 2-\frac{\delta'}{p}$ for some 
 \subsection{Preservation of distributional  lower bound}
 
 
-We now consider the preservation of distributional scalar curvature lower bounds along the Ricci flow. In \cite{jiang_weak_2021}, the authors showed that scalar curvature lower bounds in the distributional sense as above are preserved along the Ricci flow for initial metrics $g \in W^{1,p}(M^n)$ for $3 \leq n < p \leq \infty$. In this section, we improve the result by relaxing the regularity to Morrey-type condition with $2 \leq p \leq n$. We follow the approach  \cite{jiang_weak_2021} with modifications.
+We now consider the preservation of distributional scalar curvature lower bounds along the Ricci flow. In \cite{jiang_weak_2021}, the authors showed that scalar curvature lower bounds in the distributional sense as above are preserved along the Ricci flow for initial metrics $g \in W^{1,p}(M^n)$ for $3 \leq n < p \leq \infty$. In this section, we improve the result by relaxing the regularity to Morrey-type condition with $2 \leq p \leq n$. We follow the approach of \cite{jiang_weak_2021} with modifications.
 
 We first have the following lemma.
 
@@ -717,7 +716,7 @@ Since $M$ is compact, by covering argument we see that
 \begin{equation}
 \int_M |\tilde\nabla g_0|^2 d\mu_h \leq C(n,M,h,r_0,L_0,p,\delta).
 \end{equation} 
-With this, we might integrate in time from from $0$ to $T$ to obtain the result.
+With this, we integrate in time from from $0$ to $T$ to obtain the result.
 \end{proof}
 
 Now let $M$ be a closed manifold and let $g(t)$ be the Ricci-DeTurck $h$-flow on $M$. %Let $v_{ij}$ denote the right hand side of (\ref{eqn:prelim-ricci-deturck-flow}) and let $V = g^{ij}v_{ij} = -2R - 2\text{div}(X)$. By Theorem 24.2 of \cite{chow_ricci_2010}, since $M$ is closed, the heat kernel $H(x,t;y,s)$ coupled with  $g(t)$ associated with the operator $\Box:= \partial_t - \Delta_x$ exists such that
@@ -757,7 +756,7 @@ The proof is identical to that of \cite[Proposition 4.1]{jiang_weak_2021} using 
 With these two lemmata, we have the following main application for the compact case. 
 
 \begin{theorem}\label{thm:preservation-distributional-scalar-curvature-lower-bound}
-    Let $(M^n,h)$ be a  closed manifold and $g_0$ is a $C^0$ metric satisfying
+    Let $(M^n,h)$ be a  closed manifold and $g_0$ be a $C^0$ metric satisfying
     \begin{enumerate}[(i)]
         \item there is a $\Lambda > 0$ such that $\Lambda^{-1}h \leq g_0 \leq \Lambda h$ on $M$;
         \item there exist $p \geq 2, \delta > 0, r_0 ,L> 0$ such that for all $x_0 \in M$ and $0 < r < r_0$,
@@ -781,7 +780,7 @@ Fix any $t>0$. It suffices to show
 We pay extra attention to the construction of $g(t)$.  Let $g_{i,0}$ be as in Lemma \ref{lem:mollification-scheme} and $g_i(t)$ be solutions to the Ricci-DeTurck $h$-flow starting from $g_{i,0}$ as in Theorem \ref{thm:intro-application-1-statement} above so that $g(t)$ is the smooth limit of $g_i(t)$ as $i\to+\infty$ on $M\times (0,T]$.
 
 
-Let $u_i$ be the solution to (\ref{eqn:conjugate-heat-eqn}) (with respect to $g_i(t)$) with $u_{i,t} = \tilde{u}$ and $u_{i,0}(x) = u_i(x,0)$. Noted that $u_i$ satisfies the conclusion inLemma \ref{lem:conjugate-heat-equation-estimates} above uniformly as $i\to+\infty$. In particular, we have
+Let $u_i$ be the solution to (\ref{eqn:conjugate-heat-eqn}) (with respect to $g_i(t)$) with $u_{i,t} = \tilde{u}$ and $u_{i,0}(x) = u_i(x,0)$. Note that $u_i$ satisfies the conclusion in Lemma \ref{lem:conjugate-heat-equation-estimates} above uniformly as $i\to+\infty$. In particular, we have
     \begin{equation}\label{eqn:scalar-monotonicity}
         \int_M (R_{g_i(t)}-a)\tilde{u}d\mu_{g_i(t)} \geq \int_M (R_{g_{i,0}}-a)u_{i,0}d\mu_{g_{i,0}}.
     \end{equation}
@@ -890,15 +889,15 @@ and
 %    The proof follows as in the proof of the compact case, multiplying first by the cut-off function $\phi$ as in Lemma \ref{lem:mollification-scheme} above with support $K \supset \Sigma$.
 %\end{proof}
 
-Together with Proposition~\ref{prop:distributional-scalar-curvature}, it gives a removable singularity result as an application.
+Together with Proposition~\ref{prop:distributional-scalar-curvature}, we have a removable singularity result as an application.
 
 \begin{corollary}\label{thm:non-cpt-dist-scalar-curvature-lower-bdd}
 Suppose $(M^n,h)$ is a closed manifold and $g_0$ is a $C^0\cap W^{1,p}$ metric on $M$ satisfying the assumption in Proposition~\ref{prop:distributional-scalar-curvature} with $a=0$. If the Yamabe invariant of $M$ is non-positive or equivalently $M$ does not admit metric with positive scalar curvature, then $g_0$, then $g_0$ is Ricci-flat outside $\Sigma$.
 \end{corollary}
 \begin{proof}
-By Proposition~\ref{prop:distributional-scalar-curvature} and Theorem~\ref{thm:preservation-distributional-scalar-curvature-lower-bound}, there exists a Ricci Deturck $h$-flow on $M$ starting from $g_0$ in sense of  $C^0(M)\cap C^\infty_{loc}(M\setminus\Sigma)$ so that $R_{g(t)}\geq 0$.  It follows from strong maximum principle that $\mathrm{Ric}_{g(t)}\equiv 0$ for all $t>0$. Result follows from smooth convergence away from $\Sigma$ by letting $t\to0$.
+By Proposition~\ref{prop:distributional-scalar-curvature} and Theorem~\ref{thm:preservation-distributional-scalar-curvature-lower-bound}, there exists a Ricci Deturck $h$-flow on $M$ starting from $g_0$ in sense of  $C^0(M)\cap C^\infty_{loc}(M\setminus\Sigma)$ so that $R_{g(t)}\geq 0$.  It follows from the strong maximum principle that $\mathrm{Ric}_{g(t)}\equiv 0$ for all $t>0$. The result follows from smooth convergence away from $\Sigma$ by letting $t\to0$.
 \end{proof}
-In view of work of Miao \cite{miao_positive_2003}, we also see that the condition of $\delta'<\delta$ is necessary.
+By the work of Miao \cite{miao_positive_2003}, we also see that the condition of $\delta'<\delta$ is necessary.
 
 
 \printbibliography[title=References]
