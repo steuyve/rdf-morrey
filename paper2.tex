@@ -185,8 +185,7 @@ Our work is motivated by the removable singularity in view of scalar curvature. 
 
 We now outline the rest of this work. In Section \ref{sec:a-priori-estimates}, we establish the a priori estimates that will be used later. In Section \ref{sec:proof-of-main-theorem}, we prove Theorem \ref{thm:intro-application-1-statement}. Finally, in Section \ref{sec:applications}, we study the application outlined above.
 
-
-
+{\it Acknowledgement}: The first author was partially supported by Hong Kong RGC grant (Early Career Scheme) of Hong Kong No. 24304222, No. 14300623, and a NSFC grant No. 12222122.
 
 \section{a-priori estimates}\label{sec:a-priori-estimates}
 
@@ -357,27 +356,27 @@ Since at time $t = s>0$, $G(x,t;y,s) = \widetilde{G}(x,t;y,s)=\delta_y(x)$, the 
     \begin{equation*}
         \int_{B(x_0, r)} \left(|\hdel g_0|^2 + 1\right)^{\frac{1}{2}}d\mu_h(y) \leq CL_0r^{n-1+\frac{\delta}{p}}
     \end{equation*}
-    for all $0<r<r_0$. If $r>r_0$, we estimate it using trivial bound from \eqref{eqn:gradient-estimate-maximal-T1} and volume comparison:
-     \begin{equation*}
-        \int_{B(x_0, r)} \left(|\hdel g_0|^2 + 1\right)^{\frac{1}{2}}d\mu_h(y) \leq  B_1t^{\frac\delta{2p}-\frac12}\cdot \exp\left(Cr\right).
+    for all $0<r<r_0$. If $r>r_0$, by a covering argument, we can cover $B(x_0, r)$ with a finite number of balls $N$ of radius say $\frac{r_0}{2}$. Then by our assumptions and by volume comparison we have
+    \begin{equation*}
+        \int_{B(x_0, r)} \left(|\hdel g_0|^2 + 1\right)^{\frac{1}{2}}d\mu_h(y) \leq NCL_0\left(\frac{r_0}{2}\right)^{n-1+\frac{\delta}{p}} \leq C\exp(Cr)
     \end{equation*}
-    
-    
+    for some constant $C$ depending only on $L_0, n, p, \delta$ since we are taking $r_0\leq 1$.
+   
     Substituting this into (\ref{eqn:gradient-estimate-Q-heat-kernel-estimate2}) we obtain,
     \begin{align*}
         &\int_0^{\infty} \frac{C_0}{T_1^{\frac{n}{2}+1}}\exp\left(-\frac{r^2}{C_0 T_1}\right)\frac{2r}{C_0}\left(\int_{B(x_0, r)}\left(|\hdel g_0|^2 + 1\right)^{\frac{1}{2}}d\mu_h(y)\right)dr \nonumber \\
-        &\quad \leq \int_0^{r_0} \frac{C}{T_1^{\frac{n}{2}+1}}\exp\left(-\frac{r^2}{C_0 T_1}\right)r^{n+\frac{\delta}{p}}dr + \int_{r_0}^{\infty} \frac{2B_1}{T_1^{\frac{n}{2}+\frac32-\frac{\delta}{p}}}\exp\left(Cr-\frac{r^2}{C_0 T_1}\right)  dr \nonumber \\
+        &\quad \leq \int_0^{r_0} \frac{C}{T_1^{\frac{n}{2}+1}}\exp\left(-\frac{r^2}{C_0 T_1}\right)r^{n+\frac{\delta}{p}}dr + \int_{r_0}^{\infty} \frac{2Cr}{T_1^{\frac{n}{2}+1}}\exp\left(Cr-\frac{r^2}{C_0 T_1}\right)  dr \nonumber \\
 %        &\quad \leq \int_0^{\infty} \frac{4L_0}{T_1^{\frac{n}{2}+1}}\exp\left(-\frac{s^2}{C_0}\right)s^{n +\frac{\delta}{p}}T_1^{\frac{n}{2}+\frac{\delta}{2p}+\frac{1}{2}}ds + \frac{C_6\sigma}{T_1^{\frac{n}{2}+1}}T_1^{\frac{n}{2}+1} \nonumber \\
-        &\quad \leq CT_1^{-\frac{1}{2}+\frac{\delta}{2p}}\int_0^\infty\exp\left(-\frac{s^2}{C_0}\right)s^{n+\frac{\delta}{p}}ds + \int_{\frac{1}{\sqrt{T_1}}}^\infty \frac{CB_1}{T_1^{1+\frac{n}{2}}}\exp\left(-\frac{r^2}{2C_0} \right) dr\\
-        &\quad\leq CT_1^{-\frac{1}{2}+\frac{\delta}{2p}} +  \frac{CB_1}{T_1^{1+\frac{n}{2}}}\exp\left(-\frac{1}{2C_0T_1} \right).
+        &\quad \leq CT_1^{-\frac{1}{2}+\frac{\delta}{2p}}\int_0^\infty\exp\left(-\frac{s^2}{C_0}\right)s^{n+\frac{\delta}{p}}ds + \int_{r_0}^\infty \frac{2Cs}{T_1^{\frac{n}{2}}}\exp\left(C\sqrt{T_1}s- \frac{s^2}{C_0} \right) dr\\
+        &\quad\leq CT_1^{-\frac{1}{2}+\frac{\delta}{2p}} +  CT_1^{-\frac{n}{2}}.
     \end{align*}
   % for some positive constants $C_5, C_6$ depending on $n, \Lambda, L_0, k_1$ that may be changing line by line and where we used the change of variables $r = s\sqrt{T_1}$ in the second inequality above. 
   So we have
     \begin{align}\label{eqn:gradient-estimate-Q-heat-kernel-estimate4}
-        \frac14 e^{-AT_1^{\frac{\delta}{p}}-AT_1}B_1T_1^{-\frac{1}{2}+\frac{\delta}{2p}} &\leq C_1 T_1^{-\frac{1}{2}+\frac{\delta}{2p}} +  \frac{CB_1}{T_1^{1+\frac{n}{2}}}\exp\left(-\frac{1}{2C_0T_1} \right)+ C T_1.
+        \frac14 e^{-AT_1^{\frac{\delta}{p}}-AT_1}B_1T_1^{-\frac{1}{2}+\frac{\delta}{2p}} &\leq C_1 T_1^{-\frac{1}{2}+\frac{\delta}{2p}} +  C_1T_1^{-\frac{n}{2}}+ C_1 T_1.
     \end{align}
-    for some $C_1(n,\Lambda,k_1,k_2,L_0)>0$.
- By choosing $B_1=8C_1$, we see that $T_1$ is bounded from below by a constant depending only on $\delta,p,k_1,k_2,n,\Lambda,L_0$.
+    for some $C_1(n,p,\delta,\Lambda,k_1,k_2,L_0)>0$.
+ By choosing $B_1=16C_1$, we see that $T_1$ is bounded from below by a constant depending only on $\delta,p,k_1,k_2,n,\Lambda,L_0$.
     %where the last inequality is again using the fact that $T_1 \leq 1$ and also that $\sigma < 1$. 
 %    Clearing the denominators of both sides and choosing $B_1 = e(C_5 + C_6 + C_3)$, then taking logarithm of both sides, we obtain
 %    \begin{equation*}
@@ -897,7 +896,7 @@ Suppose $(M^n,h)$ is a closed manifold and $g_0$ is a $C^0\cap W^{1,p}$ metric o
 \begin{proof}
 By Proposition~\ref{prop:distributional-scalar-curvature} and Theorem~\ref{thm:preservation-distributional-scalar-curvature-lower-bound}, there exists a Ricci Deturck $h$-flow on $M$ starting from $g_0$ in sense of  $C^0(M)\cap C^\infty_{loc}(M\setminus\Sigma)$ so that $R_{g(t)}\geq 0$.  It follows from the strong maximum principle that $\mathrm{Ric}_{g(t)}\equiv 0$ for all $t>0$. The result follows from smooth convergence away from $\Sigma$ by letting $t\to0$.
 \end{proof}
-By the work of Miao \cite{miao_positive_2003}, we also see that the condition of $\delta'<\delta$ is necessary.
+In view of the work of Miao \cite{miao_positive_2003}, we also see that the condition of $\delta'<\delta$ is necessary.
 
 
 \printbibliography[title=References]
